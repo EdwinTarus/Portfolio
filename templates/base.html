@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin's Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <nav class="shadow-md sticky top-0 bg-gray-900 z-50">
+        <div class="px-6 py-6 flex items-center justify-between">
+            
+                <h1 class="text-xl font-bold">
+                    Edwin Tarus
+                </h1>
+            
+            <ul class="flex gap-8">
+                <li><a href=" #home" class="hover:text-blue-500" transition>Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500" transition>About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500" transition>Projects</a></li>
+                <li><a href="#mapping" class="hover:text-blue-500" transition>mapping</a></li>
+                <li><a href="#skills" class="hover:text-blue-500" transition>Skills</a></li>
+                <li><a href="#contact" class="hover:text-blue-500" transition>Contact</a></li>
+
+            </ul>
+            <div class="p-2"></div>
+        </div>
+
+
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

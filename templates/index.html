@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="home" class="min-h-screen flex items-center pt-20 pb-12 px-6">
+    <div class="max-w-6xl mx-auto w-full grid grid-cols-2 items-center gap-16">
+        <div>
+            <h1 class="text-4xl font-bold font-serif mb-4 text-white mb-6">
+                Hi there! I'm Edwin - A Software Developer and GIS Analyst.
+            </h1>
+
+            <p class="text-lg mb-6 pb-12 pt-4 text-gray-300">
+                I enjoy building reliable web applications and applying my GIS expertise where mapping and spatial
+                analysis add value.
+            </p>
+
+            <div class="flex gap-4">
+                <a href="#projects"
+                    class="bg-blue-400 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                    View My Projects
+                </a>
+                <a href="#contact"
+                    class="border border-gray-600 text-white px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="flex justify-center">
+
+            <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Edwin Tarus"
+                class="w-80 h-80 object-cover rounded-2xl shadow-lg">
+
+        </div>
+    </div>
+
+</section>
+
+<section id="about" class="py-24 bg-gray-800 border-border">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-3xl font-semibold mb-6 text-white">
+            About Me
+        </div>
+        <h2 class="text-2xl font-semibold mb-4">Building with Purpose</h2>
+        <div class="text-lg text-gray-300 space-y-4">
+
+            <p>
+                I'm a software developer focused on building reliable web applications and backend systems that solve
+                practical problems. I enjoy turning ideas into functional solutions, with a strong interest in writing
+                clean, maintainable code and continuously improving my skills through real-world projects.
+            </p>
+
+            <p>
+                My experience includes developing web applications both independently and as part of a team, where I've
+                worked with technologies such as Python, Flask, SQLAlchemy, JavaScript, HTML, CSS, Tailwind CSS, Git,
+                Docker, and REST APIs. These projects have strengthened my understanding of backend development,
+                database design, and collaborative software engineering practices.
+            </p>
+
+            <p>
+                Alongside software development, I hold a degree in Geospatial Information Science (GIS), giving me a
+                solid foundation in spatial data analysis, mapping, and cartography. My background allows me to combine
+                software development with geospatial technologies whenever a project requires location-based analysis or
+                mapping solutions, creating applications that bridge both disciplines.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="py-24 border-gray-200">
+    <div class="max-w-4xl mx-auto">
+
+        <div class="text-3xl font-semibold mb-6 text-white">
+            Software Development Work
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-white mb-4">Ongea Task</h3>
+                <p class="text-gray-300 mb-4">
+                    A collaborative task management web application built with Flask that helps users organize tasks,
+                    manage projects, and collaborate efficiently. The platform includes user authentication, task
+                    management, email verification, password recovery, and a responsive user interface.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full text-sm">
+                            Python
+                        </span>
+                        <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full text-sm">
+                            Flask
+                        </span>
+                        <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full text-sm">
+                            SQLAlchemy
+                        </span>
+
+                    </div>
+                    <div class="ml-auto">
+                        <a href="https://ongea-task.onrender.com/"
+                            class="text-white hover:underline hover:decoration-blue-400 cursor-pointer hover:text-blue-400">View
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-white mb-4">My Portfolio</h3>
+                <p class="text-gray-300 mb-4">
+                    A personal portfolio website built with Flask, HTML, and Tailwind CSS to showcase my skills,
+                    projects, and experience. The website features a responsive design, smooth navigation, and sections
+                    highlighting my software development and GIS expertise.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full text-sm">
+                        Python
+                    </span>
+                    <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full text-sm">
+                        Flask
+                    </span>
+                    <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full text-sm">
+                        Tailwind CSS
+                    </span>
+                    <div class="ml-auto">
+                        <a href="#"
+                            class="text-white hover:underline hover:decoration-blue-400 cursor-pointer hover:text-blue-400">View
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-white mb-4">Coming soon</h3>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="mapping" class="py-24 border-gray-200 bg-gray-800">
+    <div class="max-w-4xl mx-auto">
+
+        <div class="text-3xl font-semibold mb-6 text-white">
+            GIS Work
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-white mb-4">Coming soon</h3>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+<section id="skills" class="py-24 border-gray-200">
+    <div class="max-w-4xl mx-auto">
+
+        <div class="text-3xl font-semibold mb-6 text-white">
+            Technical Skills
+        </div>
+        <Div class="grid grid-cols-4 gap-4">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-lg font-semibold mb-2">Programming Languages</h3>
+                <ul class="list-disc list-inside text-gray-300">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                </ul>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-lg font-semibold mb-2">Frameworks & Libraries</h3>
+                <ul class="list-disc list-inside text-gray-300">
+                    <li>Flask</li>
+                    <li>SQLAlchemy</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-lg font-semibold mb-2">Tools & Technologies</h3>
+                <ul class="list-disc list-inside text-gray-300">
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>REST APIs</li>
+                </ul>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-lg font-semibold mb-2">GIS & Mapping</h3>
+                <ul class="list-disc list-inside text-gray-300">
+                    <li>Geospatial Analysis</li>
+                    <li>Mapping & Cartography</li>
+                    <li>Spatial Data Management</li>
+                </ul>
+            </div>
+
+        </Div>
+    </div>
+</section>
+
+<section id="contact" class="py-24 border-t border-gray-200">
+    <h2>Contact Me</h2>
+    <p>
+        Feel free to reach out to me via email at <a href="mailto:tarus2599@gmail.com">tarus2599@gmail.com</a>
+    </p>
+</section>
+
+{% endblock %}
